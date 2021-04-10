@@ -26,5 +26,14 @@
     "if-env": "^1.0.4",
     "mongodb": "^3.6.6",
     "mongoose": "^5.3.16"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samya129/UnifyingOurVote.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Samya129/UnifyingOurVote/issues"
+  },
+  "homepage": "https://github.com/Samya129/UnifyingOurVote#readme"
 }
