@@ -1,12 +1,17 @@
 import React from "react";
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Jumbotron from "./components/Jumbotron"
+// import Header from "./components/Header"
+import Home from "./components/Home"
+
 
 function App() {
   return (
     <div>
-<Header/>
-<Footer/>
+     <Jumbotron/>
+     <Home/>
+    
+     {/* <Header/> */}
+     {/* <Footer/> */}
     </div>
   );
 }
