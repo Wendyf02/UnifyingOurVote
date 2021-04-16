@@ -12,8 +12,8 @@ function EventFormPage() {
             <div>
                 <Navbar/>
                 < div class="container jumbotronContainer">
-                    < CommunityJumbo />
-                    < NewsJumbo />
+                    <CommunityJumbo/>
+                    <NewsJumbo/>
                 </div>
                 <h3 class="text-4xl mt-15 tracking-tight    font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                     <span class="block text-blue-200 xl:inline"> Where you can help make real change... </span>
@@ -23,7 +23,7 @@ function EventFormPage() {
                 <br></br>
                 <br></br>
 
-                
+
 
 
 
