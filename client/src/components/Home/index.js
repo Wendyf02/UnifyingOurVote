@@ -14,80 +14,68 @@ function Home() {
 
   return ( 
 
-  <Container fluid> 
-      <Row> 
-        <Col> 
-         <div className="container-fluid" id="hero"> </div>
-        </Col>
-      </Row>  
+    <Container fluid> 
+     
+         <div id="hero"> </div>
+        
    
-
-    <Button className="float-right login"  variant="outline-danger">Log In</Button>{' '}
-    <Button className="float-right signup"  variant="outline-danger">Sign Up</Button>{' '}
-
+      <div className="float-right"> 
+        <a href="/signup"> <Button className="signup"  variant="outline-danger">Sign Up</Button>{' '}</a> 
+        <a href="/login"><Button className="login"  variant="outline-danger">Log In</Button>{' '} </a>
+      </div>
 
     
-      <Row className="justify-content-md-center"> 
-        <Col xs lg="2">
-           <img className="home2" src={home2} /> 
-        </Col>
-      </Row>
-  
-   
+      
+     <img className="home2 mx-auto d-block" src={home2} /> 
+      
      
-      <Row className="justify-content-md-center" id="quote1"> 
-      {/* <Col xs lg="2">    */}
-           <h3> "Voting is the foundation stone for political action" </h3> 
-        {/* </Col> */}
-      </Row>
-
+      <h3 className="text-center" id="quote1"> "Voting is the foundation stone for political action" </h3> 
 
      
-    
-      <div className="row justify-content-md-center" id="aboutus" > 
-      <h2 className="display-4 font-weight-bold">About Us</h2>
-        </div>
-  
+      <h2 className="display-4 text-center font-weight-bold" id="aboutus">About Us</h2>
 
-    
-        <div className="col align-self-start"> 
-      <img className="about1" src={about1} /> 
-        </div>
-
-
+     
       <Row className="justify-content-md-center"> 
-        <Col xs lg="2">
-           <img className="home2" src={about2} /> 
+        <Col xs lg="7">
+           <img className="about1" src={about1}/> 
+        </Col>
+        <Col xs lg="5" className="pl-4">
+        <p>
+          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
+          Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
+          pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
+          tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
+          posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec
+          metus vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula.
+          Nam tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora
+          torquent per conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus.
+          Etiam vel condimentum magna, quis tempor nulla.
+                    
+          </p>
         </Col>
       </Row>
+
+     
+           <img className="about2 mx-auto d-block mt-5" src={about2} /> 
+          
+     
   
-      {/* <Row className="justify-content-center"> 
-        <Col>     
-           <h1> UnifyingOurVote</h1> 
-        </Col>
-      </Row> */}
+     
 
-        <div className="row justify-content-md-center" id="unitevote" > 
-          <p className="display-4 font-weight-bold">UnifyingOurVote</p>
-        </div>
+       
+          <p className="display-4 text-center font-weight-bold" id="unitevote" >UnifyingOurVote</p>
+       
 
-        <Row className="justify-content-center" id="quote2"> 
-        <Col>     
-           <h3> "Injustice anywhere is a threat to justice everywhere" </h3> 
-           <h5> "Martin Luther King" </h5>
-        </Col>
-      </Row>
+          <hr/>
+           <h3 className="text-center" id="quote2"> "Injustice anywhere is a threat to justice everywhere" </h3> 
+           <h5 className="text-center" > "Martin Luther King" </h5>
+           <hr/>
+       
 
 
 
 
-    {/* <Col sm={2} className="m-auto">
-        <img
-           className="d-block mx-auto img-fluid w-50"
-             src={mysvg}
-             alt="mysvg"
-         ></img>
-    </Col> */}
+   
     
   </Container> 
 

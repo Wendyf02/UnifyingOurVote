@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Jumbotron from "./components/Jumbotron"
 // import Header from "./components/Header"
 import Home from "./components/Home"
@@ -6,13 +7,27 @@ import Home from "./components/Home"
 
 function App() {
   return (
-    <div>
-     <Jumbotron/>
-     <Home/>
-    
-     {/* <Header/> */}
-     {/* <Footer/> */}
-    </div>
+    <Router>
+      <div>
+
+        <Switch>
+          <Route exact path={["/"]}>
+            <Jumbotron />
+            <Home />
+          </Route>
+
+          <Route exact path="/login">
+          {/* <Jumbotron /> */}
+          </Route>
+          
+          <Route exact path="/signup">
+        {/* I'M THE SIGN PAGE */}
+          </Route>
+
+          
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
