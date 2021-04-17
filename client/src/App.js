@@ -11,13 +11,14 @@ function App() {
       <div>
 
         <Switch>
+          
           <Route exact path={["/"]}>
             <Jumbotron />
             <Home />
           </Route>
 
           <Route exact path="/login">
-          {/* <Jumbotron /> */}
+          {/* <I'M THE LOGIN PAGE /> */}
           </Route>
           
           <Route exact path="/signup">

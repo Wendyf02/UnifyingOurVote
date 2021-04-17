@@ -6,10 +6,10 @@ import {Container} from "react-bootstrap"
 function JumbotronHolder() {
     return (
       <Jumbotron fluid>
-      <Container id="title">
-      <p className="display-4 font-weight-bold">UnifyingOurVote</p>
-      </Container>
-    </Jumbotron>
+        <Container id="title">
+          <p className="text-center display-1 font-weight-bold jumbotron-fluid" >UnifyingOurVote</p>
+        </Container>
+      </Jumbotron>
     );
 }
 

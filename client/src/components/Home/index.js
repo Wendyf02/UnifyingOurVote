@@ -16,7 +16,7 @@ function Home() {
 
     <Container fluid> 
      
-         <div id="hero"> </div>
+      <div className="container-fluid img-fluid" id="hero"> </div>
         
    
       <div className="float-right"> 
@@ -26,13 +26,13 @@ function Home() {
 
     
       
-     <img className="home2 mx-auto d-block" src={home2} /> 
+      <img className="home2 mx-auto d-block" src={home2} /> 
       
      
-      <h3 className="text-center" id="quote1"> "Voting is the foundation stone for political action" </h3> 
+      <h2 className="text-center font-weight-bold" id="quote1"> "Voting is the foundation stone for political action" </h2> 
 
      
-      <h2 className="display-4 text-center font-weight-bold" id="aboutus">About Us</h2>
+      <h2 className="display-3 text-center font-weight-bold" id="aboutus">About Us</h2>
 
      
       <Row className="justify-content-md-center"> 
@@ -40,44 +40,34 @@ function Home() {
            <img className="about1" src={about1}/> 
         </Col>
         <Col xs lg="5" className="pl-4">
-        <p>
-          Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
-          Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
-          pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
-          tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-          posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec
-          metus vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula.
-          Nam tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora
-          torquent per conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus.
-          Etiam vel condimentum magna, quis tempor nulla.
+          <p>
+            Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
+            Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
+            pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
+             tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
+             posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec
+             metus vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula.
+             Nam tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora
+             torquent per conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus.
+             Etiam vel condimentum magna, quis tempor nulla.
                     
           </p>
         </Col>
       </Row>
 
      
-           <img className="about2 mx-auto d-block mt-5" src={about2} /> 
+          <img className="about2 mx-auto d-block" id="about2" src={about2} /> 
           
-     
-  
-     
-
        
           <p className="display-4 text-center font-weight-bold" id="unitevote" >UnifyingOurVote</p>
        
 
           <hr/>
-           <h3 className="text-center" id="quote2"> "Injustice anywhere is a threat to justice everywhere" </h3> 
-           <h5 className="text-center" > "Martin Luther King" </h5>
-           <hr/>
+              <h3 className="text-center font-weight-bold" id="quote2"> "Injustice anywhere is a threat to justice everywhere" </h3> 
+              <h6 className="text-center font-weight-bold" > "Martin Luther King" </h6>
+          <hr/>
        
-
-
-
-
-   
-    
-  </Container> 
+    </Container> 
 
   
   );

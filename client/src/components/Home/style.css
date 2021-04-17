@@ -4,8 +4,6 @@
     height: 810px;
     width: 100%;
     margin-bottom: 25px;
-    /* margin-top: auto;
-    padding-top: 5px; */
     background-image: url("../../assets/images/home1rvsd.png");
     background-size: cover;
     background-position: center;
@@ -14,8 +12,8 @@
 .home2 {
     height: 500px;
     width:700px;
-    margin-top: 180px;
-   
+    margin-top: 140px;
+  
 }
 
 
@@ -32,7 +30,7 @@ h2{
 }
 
 h3 { 
-    color: rgb(18, 30, 66);
+    color: rgb(237, 28, 36);
     font-family: 'Merriweather', serif;
 }
 
@@ -55,28 +53,41 @@ h6 {
     font-family: 'Merriweather', serif;
 }
 
+#aboutus {
+    margin-top: 100px;
+    margin-bottom: 50px;;
+    font-family: 'Merriweather', serif;
+}
+
 
 .about1 {
-    height:550px;
-    width:750px;
-    /* margin-top:50px; */
-
+    height:500px;
+    width:700px;
+    
 }
+
+#about2 {
+    height:500px;
+    width:700px;
+    margin-top: 100px;
+}
+
 
 #quote1 {
  margin-top: 30px;
  font-family: 'Merriweather', serif;
 }
 
-
-#aboutus {
-    margin-top: 100px;
-    font-family: 'Merriweather', serif;
+#quote2 {
+    margin-top: 40px;    
 }
+
+
 
 hr {
-    border-top:1px solid rgb(179, 18, 157)!important;
+    border-top:2px solid rgb(18, 30, 66)!important;
 }
+
 
 .login, .signup {
     /* background-color:  rgb(237, 28, 36)!important; */
@@ -93,22 +104,21 @@ hr {
     font-family: 'Merriweather', serif;
   }
 
-  .login:hover, .signup:hover {
+.login:hover, .signup:hover {
     box-shadow: 0 0.4rem 1.4rem 0 white;
     transition: transform 150ms;
     transform: scale(1.03);
     /* border: 3px solid #ed1c24; */
-  }
+}
 
-  #unitevote {
-      font: size 45px;
-      color: rgb(237, 28, 36);
-      margin-top: 10px;
-      font-family: 'Merriweather', serif;
-  }
+#unitevote {
+        font: size 45px;
+        font-weight: bold;
+        color: rgb(237, 28, 36);
+        margin-top: 10px;
+        font-family: 'Merriweather', serif;
+        margin-top: 20px;
+        margin-bottom: 60px;
+}
 
 
-  #quote2 {
-    margin-top: 40px;
-    
-   }
