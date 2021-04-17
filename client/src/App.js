@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Jumbotron from "./components/Jumbotron"
-// import Header from "./components/Header"
 import Home from "./components/Home"
 
 
