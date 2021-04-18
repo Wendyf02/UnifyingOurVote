@@ -91,7 +91,7 @@ hr {
 
 .login, .signup {
     /* background-color:  rgb(237, 28, 36)!important; */
-    color: white;
+    color: rgb(237, 28, 36);
     font-size: small;
     border-radius: 25px !important;
     border: 2px solid white;
