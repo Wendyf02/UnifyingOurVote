@@ -25,8 +25,13 @@
     "dotenv": "^8.2.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
+    "mdbreact": "^5.0.2",
     "mongodb": "^3.6.6",
-    "mongoose": "^5.3.16"
+    "mongoose": "^5.3.16",
+    "react-bootstrap": "^1.5.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scroll": "^1.8.2"
   },
   "repository": {
     "type": "git",
