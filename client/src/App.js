@@ -1,13 +1,36 @@
 import React from "react";
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import CommunityPage from "./pages/CommunityPage"
+import { BrowserRouter as Router,Switch, Route} from "react-router-dom";
+import Login from "./components/Login"
+import Signup from "./components/Signup";
+import Jumbotron from "./components/Jumbotron"
+import Home from "./components/Home"
 
 function App() {
   return (
-    <div>
-<Header/>
-<Footer/>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          
+          <Route exact path={["/"]}>
+            <Jumbotron />
+            <Home />
+          </Route>
+
+          <Route exact path="/login">
+            <Login/>
+          </Route>
+          
+          <Route exact path="/signup">
+            <Signup/>
+          </Route>
+
+          <Route exact path="/YourCommunity" component={CommunityPage} />
+        </Switch>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
