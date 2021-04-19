@@ -12,7 +12,7 @@ function CommunityPage() {
      <Navbar />
       <div className="container jumboCards">
 
-        <div className="container img-fluid jumbotronContainer">
+        <div className="container img-fluid jumbotronContainer container-fluid">
           <CommunityJumbo />
           <NewsJumbo />
         </div>
@@ -20,7 +20,7 @@ function CommunityPage() {
         <CommunityCards/>
 
       </div>
-      <CreateEventButton/>
+      <CreateEventButton/> 
   </div>
     
   );

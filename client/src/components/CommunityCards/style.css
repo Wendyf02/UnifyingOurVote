@@ -2,7 +2,7 @@
   padding: 15px;
   margin-bottom: 8%;
   margin-top: 8%;
-  /* background-image: url("../../assets/images/"); */
+  background-image: url("../../assets/images/capitolpaper.png");
 }
 .card-title {
   text-align: center;
@@ -11,7 +11,6 @@
 .card-subtitle {
   text-align: center;
 }
-.buttonColumn {
+/* .buttonColumn {
   text-align: center;
-}
-
+} */
