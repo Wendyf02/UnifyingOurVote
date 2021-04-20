@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../../components/CommunityNavbar";
-import CommunityJumbo from "../../components/CommunityJumbotron";
-import NewsJumbo from "../../components/NewsJumbo";
-import CommunityCards from "../../components/CommunityCards";
+import Navbar from "../../components/CommunityNavbar/CommunityNavbar";
+import CommunityJumbo from "../../components/CommunityJumbotron/CommunityJumbotron";
+import NewsJumbo from "../../components/NewsJumbo/NewsJumbo";
+import CommunityCards from "../../components/CommunityCards/CommunityCards";
 import "./style.css"
 
 function CommunityPage() {

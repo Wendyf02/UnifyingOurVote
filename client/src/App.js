@@ -2,10 +2,11 @@ import React from "react";
 import Footer from "./components/Footer";
 import CommunityPage from "./pages/CommunityPage"
 import { BrowserRouter as Router,Switch, Route} from "react-router-dom";
-import Login from "./components/Login"
+import Login from "./components/Login/Login"
 import Signup from "./components/Signup";
-import Jumbotron from "./components/Jumbotron"
-import Home from "./components/Home"
+import Jumbotron from "./components/Jumbotron/Jumbotron"
+import Home from "./components/Home/Home"
+import EventFormPage from "./pages/EventFormPage";
 
 function App() {
   return (
@@ -26,7 +27,12 @@ function App() {
             <Signup/>
           </Route>
 
-          <Route exact path="/YourCommunity" component={CommunityPage} />
+          <Route exact path="/YourCommunity" 
+            component={CommunityPage}/>
+          
+          <Route exact path="/CreateEvent"
+            component={EventFormPage}/>
+
         </Switch>
         <Footer/>
       </div>
