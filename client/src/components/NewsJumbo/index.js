@@ -4,7 +4,6 @@ import "./style.css";
 import Carousel from "react-bootstrap/Carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // new technology?
 
-
 function NewsJumbo() {
   const [search, setSearch] = useState ("")
   // useEffect(() => {
