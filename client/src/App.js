@@ -6,6 +6,7 @@ import Login from "./components/Login"
 import Signup from "./components/Signup";
 import Jumbotron from "./components/Jumbotron"
 import Home from "./components/Home"
+import EventFormPage from "./components/EventFormPage/EventFormPage";
 
 function App() {
   return (
@@ -26,7 +27,12 @@ function App() {
             <Signup/>
           </Route>
 
-          <Route exact path="/YourCommunity" component={CommunityPage} />
+          <Route exact path="/YourCommunity" 
+            component={CommunityPage} />
+          
+          <Route exact path="/CreateEvent"
+           component={EventFormPage} />
+
         </Switch>
         <Footer/>
       </div>
