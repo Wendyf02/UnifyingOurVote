@@ -1,11 +1,13 @@
 import React from "react";
 import Footer from "./components/Footer";
-import CommunityPage from "./pages/CommunityPage"
+import CommunityPage from "./pages/CommunityPage";
 import { BrowserRouter as Router,Switch, Route} from "react-router-dom";
-import Login from "./components/Login"
+import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Jumbotron from "./components/Jumbotron"
-import Home from "./components/Home"
+import Jumbotron from "./components/Jumbotron";
+import Home from "./components/Home";
+// Vince's component Below:
+import EventForm from "./pages/EventFormPage";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           </Route>
 
           <Route exact path="/YourCommunity" component={CommunityPage} />
+
+          <Route exact path="/createEvent" component={EventForm}/>
         </Switch>
         <Footer/>
       </div>
