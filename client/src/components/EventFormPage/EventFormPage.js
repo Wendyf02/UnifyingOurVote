@@ -31,27 +31,27 @@ function EventFormPage() {
                 <form class=" pl-8">
                     <label class="block">
                     <span class="text-gray-700">Title of the Event?:</span>
-                        <input class="form-input mt-1 block w-full" placeholder="Event Name">
-                        </input>
+                        <input /> class="form-input mt-1 block w-full" placeholder="Event Name
+                        
                     </label>
 
                     <div class="mt-4" id="eventSelectEvent">
                         <span class="text-gray-700">Select Event</span>
                         <div class="mt-2">
                             <label class="inline-flex items-center">
-                                <input type="radio" class="form-radio text-red-600"  name="selectEvent" value="organize-a-rally" checked>
+                                <input /> type="radio" class="form-radio text-red-600"  name="selectEvent" value="organize-a-rally" checked
                                  <span class="ml-2">Organize a Rally</span>
-                                 </input>
+                                 
                             </label>
                             <label class="inline-flex items-center">
-                                <input type="radio" class="form-radio text-white-600"  name="selectEvent" value="start-a-petition" checked>
+                                <input /> type="radio" class="form-radio text-white-600"  name="selectEvent" value="start-a-petition" checked
                                  <span class="ml-2">Start a Petition</span>
-                                 </input>
+                                 
                             </label>
                             <label class="inline-flex items-center">
-                                <input type="radio" class="form-radio text-blue-600"  name="selectEvent" value="contact-local-senator" checked>
+                                <input /> type="radio" class="form-radio text-blue-600"  name="selectEvent" value="contact-local-senator" checked
                                  <span class="ml-2">Contact local Senator</span>
-                                 </input>
+                                 
                             </label>
                         </div>
                         <div><br /> <br /></div>
@@ -63,15 +63,15 @@ function EventFormPage() {
                         <div><br /> <br /></div>
                         <label class="block">
                     <span class="text-gray-700">Select Event Date:</span>
-                        <input>
+                        <input />
                             <DatePicker/>
-                        </input>
+                        
                     </label>
                         <div><br /> <br /></div>
                         <label class="block">
                     <span class="text-gray-700">Event Location?:</span>
-                        <input class="form-input mt-1 block w-full" placeholder="Event Location">
-                        </input>
+                        <input /> class="form-input mt-1 block w-full" placeholder="Event Location
+                        
                     </label>
                         <div><br /> <br /></div>
                         <label class="block">
