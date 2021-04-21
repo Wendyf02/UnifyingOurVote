@@ -28,7 +28,8 @@
     "if-env": "^1.0.4",
     "mongodb": "^3.6.6",
     "mongoose": "^5.3.16",
-    "react-datepicker": "^3.8.0"
+    "react-datepicker": "^3.8.0",
+    "react-native-tailwindcss": "^1.1.11"
   },
   "repository": {
     "type": "git",
