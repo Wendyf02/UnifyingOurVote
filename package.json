@@ -29,5 +29,15 @@
     "mongodb": "^3.6.6",
     "mongoose": "^5.3.16",
     "react-datepicker": "^3.8.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samya129/UnifyingOurVote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Samya129/UnifyingOurVote/issues"
+  },
+  "homepage": "https://github.com/Samya129/UnifyingOurVote#readme"
 }
