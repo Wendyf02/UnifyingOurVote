@@ -30,13 +30,13 @@ function EventFormPage() {
             <div class="form-container w-full pl-16 form font-extrabold">
                 <form class=" pl-8">
                     <label class="block">
-                    <span class="text-black">Title of the Event?:</span>
+                    <span class="text-gray-700">Title of the Event?:</span>
                         <input /> class="form-input mt-1 block w-full" placeholder="Event Name
                         
                     </label>
 
                     <div class="mt-4" id="eventSelectEvent">
-                        <span class="text-black">Select Event</span>
+                        <span class="text-gray-700">Select Event</span>
                         <div class="mt-2">
                             <label class="inline-flex items-center">
                                 <input /> type="radio" class="form-radio text-red-600"  name="selectEvent" value="organize-a-rally" checked
@@ -56,26 +56,26 @@ function EventFormPage() {
                         </div>
                         <div><br /> <br /></div>
                         <label class="block">
-                    <span class="text-black">What will be taking place at this event?:</span>
+                    <span class="text-gray-700">What will be taking place at this event?:</span>
                     <textarea class="form-textarea mt-1 block w-full" rows="3" placeholder="Event Description Here">
                         </textarea>
                     </label>
                         <div><br /> <br /></div>
                         <label class="block">
-                    <span class="text-black">Select Event Date:</span>
+                    <span class="text-gray-700">Select Event Date:</span>
                         <input />
                             <DatePicker/>
                         
                     </label>
                         <div><br /> <br /></div>
                         <label class="block">
-                    <span class="text-black">Event Location?:</span>
+                    <span class="text-gray-700">Event Location?:</span>
                         <input /> class="form-input mt-1 block w-full" placeholder="Event Location
                         
                     </label>
                         <div><br /> <br /></div>
                         <label class="block">
-                    <span class="text-black">Take more Action!:</span>
+                    <span class="text-gray-700">Take more Action!:</span>
                     <textarea class="form-textarea mt-1 block w-full" rows="5" placeholder="Event additionanl information here:"></textarea>
                     </label>
                         <div><br /> <br /></div>
