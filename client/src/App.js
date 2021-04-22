@@ -6,6 +6,7 @@ import Login from "./components/Login"
 import Signup from "./components/Signup";
 import Jumbotron from "./components/Jumbotron"
 import Home from "./components/Home"
+import "./App.css" 
 
 
 function App() {
