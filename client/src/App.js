@@ -6,6 +6,8 @@ import Login from "./components/Login"
 import Signup from "./components/Signup";
 import Jumbotron from "./components/Jumbotron"
 import Home from "./components/Home"
+import "./App.css" 
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
           <Route exact path="/YourCommunity" component={CommunityPage} />
         </Switch>
         <Footer/>
+
       </div>
     </Router>
   );
