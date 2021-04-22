@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../../components/CommunityNavbar";
-import CommunityJumbo from "../../components/CommunityJumbotron";
-import CommunityCards from "../../components/CommunityCards";
-import DatePicker from "../../components/DatePicker/DatePicker";
+import Navbar from "../CommunityNavbar";
+import CommunityJumbo from "../CommunityJumbotron";
+import CommunityCards from "../CommunityCards";
+import DatePicker from "../DatePicker";
 import "./style.css"
 import "react-datepicker/dist/react-datepicker.css";
 
