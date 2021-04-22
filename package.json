@@ -4,23 +4,30 @@
   "description": "UnifyingOurVote",
   "main": "server.js",
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "craco start && if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "build": "craco build && cd client && npm run build",
+    "test": "craco test",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",
-    "build": "cd client && npm run build",
+    "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
   "authors": "",
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
+    "autoprefixer": "^9.8.6",
     "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+    "nodemon": "^1.18.7",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
   },
   "dependencies": {
+    "@craco/craco": "^6.1.1",
     "axios": "^0.18.1",
     "bootstrap": "^4.6.0",
     "dotenv": "^8.2.0",
