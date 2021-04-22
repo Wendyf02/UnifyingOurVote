@@ -6,7 +6,9 @@ import Login from "./components/Login"
 import Signup from "./components/Signup";
 import Jumbotron from "./components/Jumbotron"
 import Home from "./components/Home"
-import EventFormPage from "./components/EventFormPage/index.js";
+import EventFormPage from "./components/EventFormPage/index";
+import "./App.css" 
+
 
 function App() {
   return (
@@ -35,6 +37,7 @@ function App() {
 
         </Switch>
         <Footer/>
+
       </div>
     </Router>
   );
