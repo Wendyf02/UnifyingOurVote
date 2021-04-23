@@ -117,13 +117,8 @@ hr {
 
 
 .login, .signup {
-<<<<<<< HEAD
-    /* background-color:  rgb(237, 28, 36)!important; */
-    color: rgb(237, 28, 36);
-=======
     background-color:solid white!important;
     color: rgb(18, 30, 66);
->>>>>>> d65782c86e162affa9bd3440383ca13f888cf03a
     font-size: small;
     border-radius: 25px !important;
     border: 2px solid rgb(237, 28, 36) !important;
