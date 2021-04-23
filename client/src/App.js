@@ -6,8 +6,6 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Jumbotron from "./components/Jumbotron";
 import Home from "./components/Home";
-// Vince's component Below:
-import EventForm from "./pages/EventFormPage";
 
 function App() {
   return (
@@ -30,7 +28,6 @@ function App() {
 
           <Route exact path="/YourCommunity" component={CommunityPage} />
 
-          <Route exact path="/createEvent" component={EventForm}/>
         </Switch>
         <Footer/>
       </div>
