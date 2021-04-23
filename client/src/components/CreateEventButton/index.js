@@ -3,7 +3,6 @@ import "./style.css";
 
 function CreateEventButton() {
   return (
-    // Put code for On-click- to go to eventPage form
     <div className="row thirdRow">
       <div className="col-md-3"></div>
       <div className="col">
