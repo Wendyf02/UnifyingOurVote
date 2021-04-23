@@ -3,6 +3,7 @@ import "./style.css";
 // import axios from "axios";
 import Carousel from "react-bootstrap/Carousel";
 
+// Create event route 
 function NewsJumbo() {
   const [search, setSearch] = useState ("")
   // useEffect(() => {

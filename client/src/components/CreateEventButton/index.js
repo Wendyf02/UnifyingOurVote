@@ -8,7 +8,7 @@ function CreateEventButton() {
       <div className="col-md-3"></div>
       <div className="col">
         <div>
-          <button className="createEvent">Create an Event</button>
+          <a href="/CreateEvent"><button className="createEvent">Create an Event</button>{' '}</a>
         </div>
       </div>
       <div className="col-md-3"></div>

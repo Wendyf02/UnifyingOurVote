@@ -31,7 +31,7 @@
 
 
 h1 {
-    font: weight 50;
+    font-size: weight 50;
     font-size: 48px;
     /* font-family: 'Merriweather', serif; */
 	color: rgb(245, 243, 243);
@@ -139,7 +139,7 @@ hr {
 }
 
 #unitevote {
-        font: size 45px;
+        font-size: 45px;
         font-weight: bold;
         color: rgb(237, 28, 36);
         margin-top: 10px;
