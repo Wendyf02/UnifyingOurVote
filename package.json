@@ -4,9 +4,8 @@
   "description": "UnifyingOurVote",
   "main": "server.js",
   "scripts": {
-    "start": "craco start && if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "build": "craco build && cd client && npm run build",
-    "test": "craco test",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "build": "cd client && npm run build",
     "start:prod": "node server.js",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
