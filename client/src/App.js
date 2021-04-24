@@ -31,12 +31,13 @@ function App() {
             <Signup/>
           </Route>
 
-          <Route exact path="/YourCommunity" 
+          <Route exact path={["/YourCommunity", "/events"]}
             component={CommunityPage} />
           
           <Route exact path="/CreateEvent"
            component={EventFormPage} />
 
+           {/* <Route exact path="/events/:id" component={}/> */}
         </Switch>
         <Footer/>
 

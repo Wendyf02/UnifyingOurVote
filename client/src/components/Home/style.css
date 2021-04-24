@@ -1,5 +1,4 @@
 
-
 #hero {
     height: 810px;
     width: 100%;
@@ -31,7 +30,7 @@
 
 
 h1 {
-    font: weight 50;
+    font-size: weight 50;
     font-size: 48px;
 	color: rgb(245, 243, 243);
 }
