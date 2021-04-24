@@ -1,24 +1,11 @@
 import React, { Component } from "react";
-import "./style.css";
-import Pic from "../../assets/images/signup.png";
-
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
 
 import { connect } from "react-redux";
-import { register } from "../../actions/auth";
-
-const vradio = (value) => {
-  if (value === false) {
-    return (
-      <div className="alert alert-danger" role="alert">
-        To proceed you must agree to our terms and conditions.
-      </div>
-    );
-  }
-};
+import { register } from "../actions/auth";
 
 const required = (value) => {
   if (!value) {
@@ -60,22 +47,19 @@ const vpassword = (value) => {
   }
 };
 
-
-class Signup extends Component {
+class Register extends Component {
   constructor(props) {
     super(props);
     this.handleRegister = this.handleRegister.bind(this);
     this.onChangeUsername = this.onChangeUsername.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
     this.onChangePassword = this.onChangePassword.bind(this);
-    this.onChangeRadio = this.onChangeRadio.bind(this);
 
     this.state = {
       username: "",
       email: "",
       password: "",
-      radio: false,
-      successful: false
+      successful: false,
     };
   }
 
@@ -97,12 +81,6 @@ class Signup extends Component {
     });
   }
 
-  onChangeRadio(e) {
-    this.setState({
-      radio: e.target.value,
-    });
-  }
-
   handleRegister(e) {
     e.preventDefault();
 
@@ -115,7 +93,7 @@ class Signup extends Component {
     if (this.checkBtn.context._errors.length === 0) {
       this.props
         .dispatch(
-          register(this.state.username, this.state.email, this.state.password, this.state.radio)
+          register(this.state.username, this.state.email, this.state.password)
         )
         .then(() => {
           this.setState({
@@ -130,27 +108,17 @@ class Signup extends Component {
     }
   }
 
-
-
-
-  
   render() {
     const { message } = this.props;
 
     return (
-      <div className= "container">
-
-        <div>
-          <img src={Pic} alt="signupImage" className="img-fluid "/>
-        </div>
-
-        <div className="form col-md-6 offset-md-3">
-
-          <div className="title">Sign Up 
-          </div>
-
-          <div className= "container2">
-
+      <div className="col-md-12">
+        <div className="card card-container">
+          <img
+            src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+            alt="profile-img"
+            className="profile-img-card"
+          />
 
           <Form
             onSubmit={this.handleRegister}
@@ -160,51 +128,41 @@ class Signup extends Component {
           >
             {!this.state.successful && (
               <div>
-              <br></br>
+                <div className="form-group">
+                  <label htmlFor="username">Username</label>
                   <Input
                     type="text"
                     className="form-control"
                     name="username"
-                    placeholder="Enter a username"
                     value={this.state.username}
                     onChange={this.onChangeUsername}
                     validations={[required, vusername]}
                   />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
                   <Input
                     type="text"
                     className="form-control"
                     name="email"
-                    placeholder="Enter your email"
                     value={this.state.email}
                     onChange={this.onChangeEmail}
                     validations={[required, email]}
                   />
+                </div>
 
+                <div className="form-group">
+                  <label htmlFor="password">Password</label>
                   <Input
                     type="password"
                     className="form-control"
                     name="password"
-                    placeholder="Enter a password"
                     value={this.state.password}
                     onChange={this.onChangePassword}
                     validations={[required, vpassword]}
                   />
-                  <div 
-                    style={{ borderTop: "20px solid #121e42 "}}>
-                  </div>
-
-                  <label>I agree to the terms and conditions.</label>
-                  <Input
-                    type="radio"
-                    className="form-control"
-                    name="radio"
-                    value={this.state.password}
-                    onChange={this.onChangeRadio}
-                    validations={[ vradio ]}
-                  />
-                  <div 
-                    style={{ borderTop: "20px solid #121e42 "}}>
-                  </div>
+                </div>
 
                 <div className="form-group">
                   <button className="btn btn-primary btn-block">Sign Up</button>
@@ -225,29 +183,7 @@ class Signup extends Component {
                 this.checkBtn = c;
               }}
             />
-
           </Form>
-        </div>
-      </div>
-
-        <br></br>
-        <br></br>
-        <br></br>
-
-        <div 
-          style={{ borderTop: "5px solid #121e42 "}}>
-        </div>
-
-        <br></br>
-
-        <div>
-          <h2 className= "quote">"If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.” -Martin Luther King Jr.</h2>
-        </div>
-
-        <br></br>
-
-        <div 
-          style={{ borderTop: "5px solid #121e42 "}}>
         </div>
       </div>
     );
@@ -260,5 +196,5 @@ function mapStateToProps(state) {
     message,
   };
 }
-//export default Signup;
-export default connect(null, mapStateToProps)(Signup);
+
+export default connect(mapStateToProps)(Register);

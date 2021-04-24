@@ -2,10 +2,11 @@ import React from "react";
 import Footer from "./components/Footer";
 import CommunityPage from "./pages/CommunityPage";
 import { BrowserRouter as Router,Switch, Route} from "react-router-dom";
-import Login from "./components/Login";
+import Login from "./components/Login/login.component"
 import Signup from "./components/Signup";
 import Jumbotron from "./components/Jumbotron"
 import Home from "./components/Home"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import EventFormPage from "./components/EventFormPage/index";
 
@@ -23,9 +24,7 @@ function App() {
             <Home />
           </Route>
 
-          <Route exact path="/login">
-            <Login/>
-          </Route>
+          <Route exact path="/login" component={Login}/>
           
           <Route exact path="/signup">
             <Signup/>
