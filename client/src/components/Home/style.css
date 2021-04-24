@@ -33,13 +33,21 @@
 h1 {
     font: weight 50;
     font-size: 48px;
+
+
+    /* font-family: 'Merriweather', serif; */
+
 	color: rgb(245, 243, 243);
 }
 
 h2, h5{
     color: rgb(18, 30, 66);
+
    
 }
+
+
+
 
 
 
@@ -49,8 +57,9 @@ h2, h5{
 
 h4, h3, h6 {
     color: rgb(237, 28, 36);
-   
+
 }
+
 
 
 
@@ -58,6 +67,7 @@ h4, h3, h6 {
 #aboutus {
     margin-top: 100px;
     margin-bottom: 50px;;
+
     
 }
 
@@ -65,6 +75,13 @@ h4, h3, h6 {
 
     #aboutus  {
         font-size: 2.75rem !important;
+
+}
+@media only screen and (max-width: 560px) {
+
+    #aboutus  {
+        font-size: 3rem !important;
+
     }  
 }
 
@@ -79,6 +96,14 @@ h4, h3, h6 {
  @media only screen and (max-width: 375px) {
     #aboutus  {
         font-size: 2rem !important;
+      }
+      
+ }
+
+
+ @media only screen and (max-width: 375px) {
+    #aboutus  {
+        font-size: 2.50rem !important;
       }
       
  }
@@ -99,6 +124,7 @@ h4, h3, h6 {
 
 #quote1 {
  margin-top: 30px;
+
 }
 
 #quote2 {
@@ -124,7 +150,7 @@ hr {
     right: 0; 
     margin-right: 30px;
     margin: 5px;
-    
+
   }
 
 .login:hover, .signup:hover {
@@ -138,10 +164,16 @@ hr {
         font-size:  45px;
         font-weight: bold;
         color: rgb(237, 28, 36);
+
         margin-top: 25px;
         margin-bottom: 60px;
 
 }
+
+
+       
+
+
 
 @media only screen and (max-width: 1000px) {
 
