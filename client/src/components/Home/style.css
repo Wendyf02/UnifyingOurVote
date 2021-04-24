@@ -84,6 +84,14 @@ h4, h3, h6 {
  }
 
 
+ @media only screen and (max-width: 375px) {
+    #aboutus  {
+        font-size: 2.50rem !important;
+      }
+      
+ }
+
+
 .about1 {
     height:500px;
     width:700px;
