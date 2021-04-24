@@ -7,7 +7,7 @@ db.mongoose = mongoose;
 
 db.user = require("./user.model");
 
+db.event = require("./event");
+
 module.exports = db;
-module.exports = {
-  Event: require("./event"),
-};
+
