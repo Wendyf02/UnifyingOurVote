@@ -64,7 +64,7 @@ function Home() {
 
           <hr/>
               <h3 className="text-center font-weight-bold" id="quote2"> "Injustice anywhere is a threat to justice everywhere" </h3> 
-              <h6 className="text-center font-weight-bold" > "Martin Luther King" </h6>
+              <h6 className="text-center font-weight-bold" > "Martin Luther King Jr." </h6>
           <hr/>
        
     </Container> 

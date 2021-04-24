@@ -33,50 +33,55 @@
 h1 {
     font: weight 50;
     font-size: 48px;
-    /* font-family: 'Merriweather', serif; */
 	color: rgb(245, 243, 243);
 }
 
-h2{
+h2, h5{
     color: rgb(18, 30, 66);
-    /* font-family: 'Merriweather', serif; */
+   
 }
 
-h3 { 
+
+
+
+
+
+
+h4, h3, h6 {
     color: rgb(237, 28, 36);
-    /* font-family: 'Merriweather', serif; */
-}
-
-h5 { 
-    color: rgb(18, 30, 66);
-    /* font-family: 'Merriweather', serif; */
+   
 }
 
 
 
-h4 {
-    color: rgb(237, 28, 36);
-    /* font-family: 'Merriweather', serif; */
-}
-
-
-
-h6 {
-    color: rgb(237, 28, 36);
-    /* font-family: 'Merriweather', serif; */
-}
 
 #aboutus {
     margin-top: 100px;
     margin-bottom: 50px;;
-    /* font-family: 'Merriweather', serif; */
+    
 }
+
+@media only screen and (max-width: 760px) {
+
+    #aboutus  {
+        font-size: 2.75rem !important;
+    }  
+}
+
 @media only screen and (max-width: 560px) {
 
     #aboutus  {
-        font-size: 3rem !important;
+        font-size: 2.5rem !important;
     }  
 }
+
+
+ @media only screen and (max-width: 375px) {
+    #aboutus  {
+        font-size: 2rem !important;
+      }
+      
+ }
 
 
  @media only screen and (max-width: 375px) {
@@ -102,7 +107,6 @@ h6 {
 
 #quote1 {
  margin-top: 30px;
- /* font-family: 'Merriweather', serif; */
 }
 
 #quote2 {
@@ -128,7 +132,7 @@ hr {
     right: 0; 
     margin-right: 30px;
     margin: 5px;
-    /* font-family: 'Merriweather', serif; */
+    
   }
 
 .login:hover, .signup:hover {
@@ -139,15 +143,14 @@ hr {
 }
 
 #unitevote {
-        font: size 45px;
+        font-size:  45px;
         font-weight: bold;
         color: rgb(237, 28, 36);
-        margin-top: 10px;
-        /* font-family: 'Merriweather', serif; */
-        margin-top: 20px;
+        margin-top: 25px;
         margin-bottom: 60px;
 
 }
+
 @media only screen and (max-width: 1000px) {
 
     #unitevote {
