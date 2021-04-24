@@ -30,13 +30,16 @@ function NewsJumbo() {
   return (
     <section className="newsInclusive">
       <div className="container newsContainer container-fluid">
-        <h3>News</h3>
+        <h3 className="titleh3">News</h3>
         <hr></hr>
-            <Carousel>
+        <br></br>
+        <br></br>
+            <Carousel className="Size" fade>
               {newsResults.map((news) => {
                 console.log(news);
                 return (
                   <Carousel.Item key={news.url}>
+                    <br></br>
                     <a className="Atag" href={news.url} target="_blank">
                       <img
                         className="d-block newsImage"
@@ -45,7 +48,7 @@ function NewsJumbo() {
                       />
                     </a>
                     <Carousel.Caption>
-                      <h3>{news.name}</h3>
+                      <h5>{news.name}</h5>
                       <p className="fontColor">{news.description}</p>
                     </Carousel.Caption>
                   </Carousel.Item>
