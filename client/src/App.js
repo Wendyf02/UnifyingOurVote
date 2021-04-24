@@ -26,9 +26,7 @@ function App() {
 
           <Route exact path="/login" component={Login}/>
           
-          <Route exact path="/signup">
-            <Signup/>
-          </Route>
+          <Route exact path="/signup" component={Signup}/>
 
           <Route exact path={["/YourCommunity", "/events"]}
             component={CommunityPage} />
