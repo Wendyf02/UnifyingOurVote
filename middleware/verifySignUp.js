@@ -1,5 +1,5 @@
 // To verify a Signup action, we two functions...
-const db = require("../models");
+const db = require("../models/index");
 const User = db.user;
 
 // checks duplications for username and email

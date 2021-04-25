@@ -5,9 +5,7 @@ const db = {};
 
 db.mongoose = mongoose;
 
-db.user = require("./user.model");
-
-module.exports = db;
 module.exports = {
   Event: require("./event"),
+  user: require("./user.model")
 };

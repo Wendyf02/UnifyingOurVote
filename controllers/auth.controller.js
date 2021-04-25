@@ -11,7 +11,7 @@ There are 2 main functions for Authentication:
 */
 
 const config = require("../config/auth.config");
-const db = require("../models");
+const db = require("../models/index");
 const User = db.user;
 
 
