@@ -6,6 +6,9 @@ import { isEmail } from "validator";
 
 import AuthService from "../../services/auth.service";
 
+import "./style.css";
+import Pic from "../../assets/images/signup.png";
+
 const required = (value) => {
   if (!value) {
     return (
