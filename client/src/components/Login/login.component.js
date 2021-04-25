@@ -107,14 +107,17 @@ const Login = (props) => {
 
               </div>
 
+              <br></br>
 
               <div className="form-group">
+
                 <button className="btn btn-light btn-block" disabled={loading}>
                   {loading && (
                     <span className="spinner-border spinner-border-sm"></span>
                   )}
                   <span>Login</span>
                 </button>
+
               </div>
 
               {message && (
@@ -126,7 +129,6 @@ const Login = (props) => {
               )}
               <CheckButton style={{ display: "none" }} ref={checkBtn} />
             </Form>
-
       </div>
       <br></br>
       <br></br>

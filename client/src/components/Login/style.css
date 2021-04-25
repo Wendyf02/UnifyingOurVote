@@ -1,7 +1,7 @@
 .form input {
     margin: 10px;
     height: 40px;
-    width: 90%;
+    width: 95%;
     color: #ed1c24;
 }
 .quote {
@@ -26,4 +26,5 @@
     background-color: white;
     border-radius: .8rem;
     padding-top: 10px;
+    height: 135px;
 }
