@@ -1,3 +1,4 @@
+//NOT IN USE
 import React, { Component } from "react";
 import "./style.css";
 import Pic from "../../assets/images/login.png";
