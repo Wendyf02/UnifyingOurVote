@@ -106,20 +106,20 @@ const Register = (props) => {
   return (
     <div className="container">
       <div>
-          <img src={Pic} alt="signupImage" className="img-fluid "/>
+        <img src={Pic} alt="signupImage" className="img-fluid "/>
       </div>
       <div className="form col-md-6 offset-md-3">
 
         <div className="title">Sign Up 
         </div>
 
-        <div className= "container2">
+        <Form onSubmit={handleRegister} ref={form}>
+          {!successful && (
+            <div>
 
-          <Form onSubmit={handleRegister} ref={form}>
-            {!successful && (
-              <div>
+              <div className= "container2">
+                
                 <div className="form-group">
-
                   <Input
                     type="text"
                     className="form-control"
@@ -155,25 +155,26 @@ const Register = (props) => {
                   />
                 </div>
 
-                <div className="form-group">
-                  <button className="btn btn-primary btn-block">Sign Up</button>
-                </div>
               </div>
-            )}
 
-            {message && (
               <div className="form-group">
-                <div
-                  className={ successful ? "alert alert-success" : "alert alert-danger" }
-                  role="alert"
-                >
-                  {message}
-                </div>
+                <button className="btn btn-light btn-block">Sign Up</button>
               </div>
-            )}
-            <CheckButton style={{ display: "none" }} ref={checkBtn} />
-          </Form>
-        </div>
+              
+            </div>
+          )}
+          {message && (
+            <div className="form-group">
+              <div
+                className={ successful ? "alert alert-success" : "alert alert-danger" }
+                role="alert"
+              >
+                {message}
+              </div>
+            </div>
+          )}
+          <CheckButton style={{ display: "none" }} ref={checkBtn} />
+        </Form>
       </div>
     </div>
   );
