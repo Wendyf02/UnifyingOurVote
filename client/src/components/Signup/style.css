@@ -9,6 +9,7 @@
     width: 100%;
 }
 .form {
+    background-color: #121e42;
     text-align: center;
     border-radius: .8rem;
     margin-top: -200px;
@@ -16,6 +17,7 @@
 }
 .title {
     font-size: 75px;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
     padding-bottom: 10px;
 }
