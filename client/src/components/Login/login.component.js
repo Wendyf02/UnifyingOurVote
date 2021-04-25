@@ -74,13 +74,14 @@ const Login = (props) => {
         <img src={Pic} alt="loginImage" className="img-fluid"/>
       </div>
       <div className= "form col-md-6 offset-md-3">
-          <div className="title">Log in
-          </div>
-          <div className= "container2">
-            <br></br>
-            <Form onSubmit={handleLogin} ref={form}>
-              <div className="form-group">
+        <div className="title">Log in
+        </div>
 
+            <Form onSubmit={handleLogin} ref={form}>
+
+              <div className= "container2">
+
+              <div className="form-group">
                 <Input
                   type="text"
                   className="form-control"
@@ -104,8 +105,11 @@ const Login = (props) => {
                 />
               </div>
 
+              </div>
+
+
               <div className="form-group">
-                <button className="btn btn-primary btn-block" disabled={loading}>
+                <button className="btn btn-light btn-block" disabled={loading}>
                   {loading && (
                     <span className="spinner-border spinner-border-sm"></span>
                   )}
@@ -122,7 +126,7 @@ const Login = (props) => {
               )}
               <CheckButton style={{ display: "none" }} ref={checkBtn} />
             </Form>
-          </div>
+
       </div>
       <br></br>
       <br></br>
