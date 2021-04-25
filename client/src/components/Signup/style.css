@@ -27,4 +27,6 @@
 .container2 {
     background-color: white;
     border-radius: .8rem;
+    padding: 10px;
+    height: 165px;
 }

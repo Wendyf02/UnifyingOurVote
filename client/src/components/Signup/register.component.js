@@ -156,7 +156,7 @@ const Register = (props) => {
                 </div>
 
               </div>
-
+              <br></br>
               <div className="form-group">
                 <button className="btn btn-light btn-block">Sign Up</button>
               </div>
@@ -176,6 +176,27 @@ const Register = (props) => {
           <CheckButton style={{ display: "none" }} ref={checkBtn} />
         </Form>
       </div>
+
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <div 
+        style={{ borderTop: "5px solid #121e42 "}}>
+      </div>
+
+      <br></br>
+
+      <div>
+        <h2 className= "quote">"If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.” -Martin Luther King Jr.</h2>
+      </div>
+
+      <br></br>
+
+      <div 
+        style={{ borderTop: "5px solid #121e42 "}}>
+      </div>
+
     </div>
   );
 };
