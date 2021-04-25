@@ -93,10 +93,13 @@ class Login extends Component {
       </div>
 
       <div className= "form col-md-6 offset-md-3">
+        
         <div className="title">Log in
         </div>
+
         <div className= "container2">
           <br></br>
+
           <Form
             onSubmit={this.handleLogin}
             ref={(c) => {
