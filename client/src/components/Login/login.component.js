@@ -80,11 +80,12 @@ const Login = (props) => {
             <br></br>
             <Form onSubmit={handleLogin} ref={form}>
               <div className="form-group">
-                <label htmlFor="username">Username</label>
+
                 <Input
                   type="text"
                   className="form-control"
                   name="username"
+                  placeholder="Username"
                   value={username}
                   onChange={onChangeUsername}
                   validations={[required]}
@@ -92,11 +93,11 @@ const Login = (props) => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="password">Password</label>
                 <Input
                   type="password"
                   className="form-control"
                   name="password"
+                  placeholder="Password"
                   value={password}
                   onChange={onChangePassword}
                   validations={[required]}
