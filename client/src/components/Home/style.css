@@ -13,22 +13,7 @@
     height: 500px;
     width:700px;
     margin-top: 140px;
-
 }
-
- @media only screen and (max-width: 680px) {
-      .home2 {
-          width:100%;
-      }
-      .about1 {
-          width: 100% !important;
-      }
-
-      .about2 {
-        width: 100% !important;
-      }
- }
-
 
 h1 {
     font-size: weight 50;
@@ -54,36 +39,12 @@ h4, h3, h6 {
     
 }
 
-@media only screen and (max-width: 760px) {
-
-    #aboutus  {
-        font-size: 2.75rem !important;
-    }  
-}
-
-@media only screen and (max-width: 560px) {
-
-    #aboutus  {
-        font-size: 2.5rem !important;
-    }  
-}
-
-
- @media only screen and (max-width: 375px) {
-    #aboutus  {
-        font-size: 2rem !important;
-      }
-      
- }
-
-
 
 
 .about1 {
     height:500px;
     width:700px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
 }
 
 #about2 {
@@ -173,18 +134,48 @@ hr {
     }
 }
 
+
 @media only screen and (max-width: 760px) {
 
     #unitevote {
         font-size: 2rem !important;
     }  
+
+    #aboutus  {
+        font-size: 2.75rem !important;
+    }  
+    .home2 {
+        height: 100%;
+      }
+
 }
+
+
+@media only screen and (max-width: 680px) {
+    .home2 {
+        width:100%;
+    }
+    .about1 {
+        width: 100% !important;
+    }
+
+    .about2 {
+      width: 100% !important;
+    }
+}
+
+
 
 @media only screen and (max-width: 560px) {
 
     #unitevote {
         font-size: 1.75rem !important;
     }  
+
+    #aboutus  {
+        font-size: 2.5rem !important;
+    }  
+
 }
 
 
@@ -192,5 +183,10 @@ hr {
       #unitevote {
         font-size: 1.75rem !important;
       }
-      
+
+      #aboutus  {
+        font-size: 2rem !important;
+      }
  }
+
+ 

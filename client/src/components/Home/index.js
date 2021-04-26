@@ -42,7 +42,7 @@ function Home() {
           <p className="aboutapp">
           <br/>
               <br/>
-             The purpose of our App is to get peolpe in the Georgia Community, a place to gather, organize events and educate with   
+             The purpose of our App is to get people in the Georgia Community, a place to gather, organize events and educate with   
              the mission of staying active in the fight of the current law passed by the Georgia Legislative.         
               <br/>
               <br/>
@@ -63,7 +63,7 @@ function Home() {
              are our present day examples which aims towards the ongoing evolving struggles that minorities face in present times.
              <br/>
               <br/>
-             Keep connected get involve.              
+              Keep connected get involve.              
           </p>
         </Col>
       </Row>
