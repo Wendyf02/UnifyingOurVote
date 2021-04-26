@@ -1,11 +1,13 @@
 .backgroundNav2 {
     background-color: #121e42;
+    border-bottom: 6px solid white;
   }
 .navbar-brand{
     font-size: xx-large !important; 
     font-weight: 540;
     text-decoration: none; 
-    color: white 
+    color: white ;
+    /* border-bottom: solid 5px white; */
 }
 .navbar-brand:hover{
   color: white;
@@ -14,7 +16,6 @@
     background-color: #121e42;
     color: white !important;
     font-size: small;
-    /* border-radius: 25px; */
     border: 2px solid white;
     width: 180px;
     text-align: center;

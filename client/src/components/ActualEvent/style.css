@@ -1,0 +1,33 @@
+.eventContainer {
+  color: white;
+  height: 800px;
+  background-color: #121e42;
+}
+#actualEvent{
+  background-color: #121e42;
+  margin: 20px;
+}
+.headerTitle {
+  padding-top: 15px;
+  text-align: center;
+  font-size: xx-large;
+}
+.styleRow{
+    text-align: center;
+}
+.link{
+    text-align: center;
+    color: rgb(230, 45, 230);
+}
+.eventLink:hover{
+    color:#ed1c24;
+}
+.hiDescription{
+    color: white;
+    font-size: x-large;
+}
+.infoPart2, .inforPart1{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
