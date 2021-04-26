@@ -2,18 +2,22 @@ import React from "react";
 import "./style.css";
 import EventNavbar from "../EventNavbar";
 import Footer from "../Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBalanceScale } from "@fortawesome/free-solid-svg-icons";
 
 function ActualEvent() {
+  const scale = <FontAwesomeIcon icon={faBalanceScale} />;
   return (
     <div id="actualEvent">
       <EventNavbar />
       <div className="container eventContainer">
         <div className="container infoPart1">
-          <h1 className="headerTitle">Disability Service Petition</h1>
+          <h1 className="headerTitle">Disability Service Petition </h1>
           <br></br>
           <div className="row styleRow">
             <div className="col"></div>
             <div className="col date">Date: April 7, 2021</div>
+            <div className="col scale fa-lg">{scale}</div>
             <div className="col location">Location: No location</div>
             <div className="col"></div>
           </div>
