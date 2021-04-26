@@ -9,6 +9,7 @@
     background-position: center;
 }
 
+
 .home2 {
     height: 500px;
     width:700px;
@@ -42,22 +43,15 @@ h2, h5{
 }
 
 
-
-
-
-
-
 h4, h3, h6 {
     color: rgb(237, 28, 36);
    
 }
 
 
-
-
 #aboutus {
-    margin-top: 100px;
-    margin-bottom: 50px;;
+    margin-top:150px;
+    margin-bottom: 15px;;
     
 }
 
@@ -84,17 +78,12 @@ h4, h3, h6 {
  }
 
 
- @media only screen and (max-width: 375px) {
-    #aboutus  {
-        font-size: 2.50rem !important;
-      }
-      
- }
 
 
 .about1 {
     height:500px;
     width:700px;
+    margin-bottom: 20px;
     
 }
 
@@ -112,7 +101,6 @@ h4, h3, h6 {
 #quote2 {
     margin-top: 40px;    
 }
-
 
 
 hr {
@@ -141,6 +129,30 @@ hr {
     transform: scale(1.03);
     
 }
+
+.lin1, .link2, .link3 {
+    background-color:solid white!important;
+    color: rgb(18, 30, 66);
+    font-size: small;
+    border-radius: 25px !important;
+    border: 2px solid rgb(237, 28, 36) !important;
+    width: 170px;
+    height: 40px;
+    /* float: right;  */
+    right: 0; 
+    margin-right: 40px;
+    margin-left: 40px;
+    margin: 10px;
+    
+  }
+
+.lin1, .link2, .link3 {
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(18, 30, 66);
+    transition: transform 150ms;
+    transform: scale(1.03);
+    
+}
+
 
 #unitevote {
         font-size:  45px;

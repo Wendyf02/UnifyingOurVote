@@ -35,26 +35,41 @@ function Home() {
       <h2 className="display-3 text-center font-weight-bold" id="aboutus">About Us</h2>
 
      
+      <img className="about2 mx-auto d-block" id="about2" src={about1} /> 
+     
       <Row className="justify-content-md-center"> 
-        <Col xs="12" sm="12" lg="7">
+        {/* <Col xs="12" sm="12" lg="7">
            <img className="about1" src={about1}/> 
-        </Col>
-        <Col xs sm="12" lg="5" className="pl-4">
+        </Col> */}
+        <Col xs sm="12" lg="5" className="pl-2">
           <p>
-            Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
-            Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
-            pellentesque placerat lacus imperdiet efficitur. In felis nisl, luctus non ante euismod,
-             tincidunt bibendum mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-             posuere, eget tristique dui dapibus. Maecenas fermentum elementum faucibus. Quisque nec
-             metus vestibulum, egestas massa eu, sollicitudin ipsum. Nulla facilisi. Sed ut erat ligula.
-             Nam tincidunt nunc in nibh dictum ullamcorper. Class aptent taciti sociosqu ad litora
-             torquent per conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at rhoncus.
-             Etiam vel condimentum magna, quis tempor nulla.
-                    
+             The purpose of our App is to get peolpe in the Georgia Community, a place to gather, organize events and educate with   
+             the mission of staying active in the fight of the current law passed by the Georgia Legislative.         
+
+             This unlawful law is aimed to disenfranchise and make it harder for African American and minorities to vote.    
+             As a community we must Unify and Unite to this unjust law.   
+
+             We must not turn the blind eye and stay silent and stand on the side lines.   
+
+             We must unite and continue the mission our ancestor started. Lets educate, let's make our voices resound,
+             let our liberties and rights stand tall and strong.Let's make them proud and honor them with vindication.
+
+             AS Martin Luther KIng Jr. Once said "Life's most persistent and urgent question is "What are you doing for others?"
+             This selfless approach to this date has created positive inspiring change to all future generations.
+
+             Several movements have sprung due to changing times and circumstances. The Black Lives Matter and the influential Stacy Abrams
+             are our present day examples which aims towards the onggoing evolving struggles that minorities face in present times.
+
+             Keep connected get involve.              
           </p>
         </Col>
       </Row>
 
+      <div className="d-flex justify-content-center"> 
+        {/* <a target="blank" href="https://thekingcenter.org"> <Button className="link1"  variant="outline-danger">TKC</Button>{' '}</a>  */}
+        <a target="blank" href="https://staceyabrams.com"> <Button className="link2"  variant="outline-danger">Stacy Abrams</Button>{' '}</a>
+        <a target="blank" href="https://blacklivesmatter.com"> <Button className="link3"  variant="outline-danger">blacklivesmatter</Button>{' '}</a>
+      </div>
      
           <img className="about2 mx-auto d-block" id="about2" src={about2} /> 
           
@@ -64,7 +79,7 @@ function Home() {
 
           <hr/>
               <h3 className="text-center font-weight-bold" id="quote2"> "Injustice anywhere is a threat to justice everywhere" </h3> 
-              <h6 className="text-center font-weight-bold" > "Martin Luther King Jr." </h6>
+              <h3 className="text-center font-weight-bold" > "Martin Luther King Jr." </h3>
           <hr/>
        
     </Container> 
