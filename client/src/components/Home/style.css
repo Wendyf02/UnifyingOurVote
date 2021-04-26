@@ -1,7 +1,7 @@
 
 
 #hero {
-    height: 810px;
+    height: 750px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../../assets/images/home1rvsd.png");
@@ -50,7 +50,7 @@ h4, h3, h6 {
 
 
 #aboutus {
-    margin-top:150px;
+    margin-top:100px;
     margin-bottom: 15px;;
     
 }
@@ -94,6 +94,10 @@ h4, h3, h6 {
 }
 
 
+.aboutapp {
+    text-align:justify;
+}
+
 #quote1 {
  margin-top: 30px;
 }
@@ -110,7 +114,7 @@ hr {
 
 .login, .signup {
     background-color:solid white!important;
-    color: rgb(18, 30, 66);
+    color:  rgb(237, 28, 36);
     font-size: small;
     border-radius: 25px !important;
     border: 2px solid rgb(237, 28, 36) !important;
@@ -140,8 +144,8 @@ hr {
     height: 40px;
     /* float: right;  */
     right: 0; 
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 45px;
+    margin-left: 45px;
     margin: 10px;
     
   }
