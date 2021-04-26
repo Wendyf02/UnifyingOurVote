@@ -20,13 +20,16 @@ function ActualEvent() {
           <br></br>
           <div className="row linkRow">
             <div className="col link">
-              <a className="eventLink" href="https://www.change.org/" target="_blank">
+              <a
+                className="eventLink"
+                href="https://www.change.org/"
+                target="_blank"
+              >
                 Change.org
               </a>
             </div>
           </div>
         </div>
-
         <div className="row descriptionRow infoPart2">
           <h3 className="hiDescription">Description:</h3>
           <br></br>
