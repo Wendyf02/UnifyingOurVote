@@ -1,4 +1,11 @@
+const mongoose = require("mongodb");
+mongoose.Promise = global.Promise;
+
+const db = {};
+
+db.mongoose = mongoose;
+
 module.exports = {
   Event: require("./event"),
-  User: require("./user"),
+  user: require("./user.model")
 };

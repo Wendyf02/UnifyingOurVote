@@ -2,45 +2,141 @@ import React, { Component } from "react";
 import "./style.css";
 import Pic from "../../assets/images/signup.png";
 
+import Form from "react-validation/build/form";
+import Input from "react-validation/build/input";
+import CheckButton from "react-validation/build/button";
+import { isEmail } from "validator";
+
+import { connect } from "react-redux";
+import { register } from "../../actions/auth";
+
+const vradio = (value) => {
+  if (value === false) {
+    return (
+      <div className="alert alert-danger" role="alert">
+        To proceed you must agree to our terms and conditions.
+      </div>
+    );
+  }
+};
+
+const required = (value) => {
+  if (!value) {
+    return (
+      <div className="alert alert-danger" role="alert">
+        This field is required!
+      </div>
+    );
+  }
+};
+
+const email = (value) => {
+  if (!isEmail(value)) {
+    return (
+      <div className="alert alert-danger" role="alert">
+        This is not a valid email.
+      </div>
+    );
+  }
+};
+
+const vusername = (value) => {
+  if (value.length < 3 || value.length > 20) {
+    return (
+      <div className="alert alert-danger" role="alert">
+        The username must be between 3 and 20 characters.
+      </div>
+    );
+  }
+};
+
+const vpassword = (value) => {
+  if (value.length < 6 || value.length > 40) {
+    return (
+      <div className="alert alert-danger" role="alert">
+        The password must be between 6 and 40 characters.
+      </div>
+    );
+  }
+};
+
+
 class Signup extends Component {
-  // Setting the component's initial state
-  state = {
-    username: "",
-    email: "",
-    password: "",
-    confirmationPassword: "",
-    termsAndConditions: false
-  };
+  constructor(props) {
+    super(props);
+    this.handleRegister = this.handleRegister.bind(this);
+    this.onChangeUsername = this.onChangeUsername.bind(this);
+    this.onChangeEmail = this.onChangeEmail.bind(this);
+    this.onChangePassword = this.onChangePassword.bind(this);
+    this.onChangeRadio = this.onChangeRadio.bind(this);
 
-  handleInputChange = event => {
+    this.state = {
+      username: "",
+      email: "",
+      password: "",
+      radio: false,
+      successful: false
+    };
+  }
 
-    if (this.state.username !== "" 
-      && this.state.email !== "" 
-      && this.state.password !== "" 
-      && this.state.confirmationPassword !== "" 
-      && this.state.termsAndConditions === true) {
-      //change the button to enabled.
-      //if user built scuccesfuly on back end (stateus code or however you want to handle it)
-      //direct user to community page
-    }
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = event.target;
-    // function that runs and checks to see if all feilds have inputs
-    // then an if else ALL true then change disable 
-
-    // Updating the input's state 
+  onChangeUsername(e) {
     this.setState({
-      [name]: value
+      username: e.target.value,
     });
-  };
+  }
 
-  handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    event.preventDefault();
-  };
+  onChangeEmail(e) {
+    this.setState({
+      email: e.target.value,
+    });
+  }
 
+  onChangePassword(e) {
+    this.setState({
+      password: e.target.value,
+    });
+  }
+
+  onChangeRadio(e) {
+    this.setState({
+      radio: e.target.value,
+    });
+  }
+
+  handleRegister(e) {
+    e.preventDefault();
+
+    this.setState({
+      successful: false,
+    });
+
+    this.form.validateAll();
+
+    if (this.checkBtn.context._errors.length === 0) {
+      this.props
+        .dispatch(
+          register(this.state.username, this.state.email, this.state.password, this.state.radio)
+        )
+        .then(() => {
+          this.setState({
+            successful: true,
+          });
+        })
+        .catch(() => {
+          this.setState({
+            successful: false,
+          });
+        });
+    }
+  }
+
+
+
+
+  
   render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
+    const { message } = this.props;
+
     return (
       <div className= "container">
 
@@ -54,54 +150,85 @@ class Signup extends Component {
           </div>
 
           <div className= "container2">
-            <form>
-              <input
-                value={this.state.username}
-                name="fullName"
-                onChange={this.handleInputChange}
-                type="text"
-                placeholder="Full name:"
-              />
-              <br></br>
-              <input
-                value={this.state.email}
-                name="email"
-                onChange={this.handleInputChange}
-                type="text"
-                placeholder="Email:"
-              />
-              <br></br>
-              <input
-                value={this.state.password}
-                name="password"
-                onChange={this.handleInputChange}
-                type="text"
-                placeholder="Enter Password:"
-              />
-              <input
-                value={this.state.confirmationPassword}
-                name="confirmationPassword"
-                onChange={this.handleInputChange}
-                type="text"
-                placeholder="Confirm Password:"
-              />
-                <input
-                  type="radio" 
-                  id="legal" 
-                  name="consent" 
-                  onChange={this.handleInputChange}
-                  value={this.state.termsAndConditions}
-                /> I agree to the terms and conditions.
-            </form>
-          </div>
 
-          <br></br>
-          <button disabled={this.state.username !== "" 
-      && this.state.email !== "" 
-      && this.state.password !== "" 
-      && this.state.confirmationPassword !== "" 
-      && this.state.termsAndConditions === true} type="button" className="btn btn-light btn-block" onClick={this.handleFormSubmit}>Sign Up</button>
+
+          <Form
+            onSubmit={this.handleRegister}
+            ref={(c) => {
+              this.form = c;
+            }}
+          >
+            {!this.state.successful && (
+              <div>
+              <br></br>
+                  <Input
+                    type="text"
+                    className="form-control"
+                    name="username"
+                    placeholder="Enter a username"
+                    value={this.state.username}
+                    onChange={this.onChangeUsername}
+                    validations={[required, vusername]}
+                  />
+                  <Input
+                    type="text"
+                    className="form-control"
+                    name="email"
+                    placeholder="Enter your email"
+                    value={this.state.email}
+                    onChange={this.onChangeEmail}
+                    validations={[required, email]}
+                  />
+
+                  <Input
+                    type="password"
+                    className="form-control"
+                    name="password"
+                    placeholder="Enter a password"
+                    value={this.state.password}
+                    onChange={this.onChangePassword}
+                    validations={[required, vpassword]}
+                  />
+                  <div 
+                    style={{ borderTop: "20px solid #121e42 "}}>
+                  </div>
+
+                  <label>I agree to the terms and conditions.</label>
+                  <Input
+                    type="radio"
+                    className="form-control"
+                    name="radio"
+                    value={this.state.password}
+                    onChange={this.onChangeRadio}
+                    validations={[ vradio ]}
+                  />
+                  <div 
+                    style={{ borderTop: "20px solid #121e42 "}}>
+                  </div>
+
+                <div className="form-group">
+                  <button className="btn btn-primary btn-block">Sign Up</button>
+                </div>
+              </div>
+            )}
+
+            {message && (
+              <div className="form-group">
+                <div className={ this.state.successful ? "alert alert-success" : "alert alert-danger" } role="alert">
+                  {message}
+                </div>
+              </div>
+            )}
+            <CheckButton
+              style={{ display: "none" }}
+              ref={(c) => {
+                this.checkBtn = c;
+              }}
+            />
+
+          </Form>
         </div>
+      </div>
 
         <br></br>
         <br></br>
@@ -122,22 +249,16 @@ class Signup extends Component {
         <div 
           style={{ borderTop: "5px solid #121e42 "}}>
         </div>
-
-        <br></br>
-
-        <div>
-          Testing full name: {this.state.fullName}
-          <br></br>
-          Testing email: {this.state.email}
-          <br></br>
-          Testing password: {this.state.password}
-          <br></br>
-          Testing confirmation password: {this.state.confirmationPassword}
-        </div>
-
       </div>
     );
   }
 }
 
-export default Signup;
+function mapStateToProps(state) {
+  const { message } = state.message;
+  return {
+    message,
+  };
+}
+//export default Signup;
+export default connect(null, mapStateToProps)(Signup);
