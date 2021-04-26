@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../components/Grid";
-import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn } from "../components/Form";
+
 
 function Events() {
   // Setting our component's initial state
@@ -41,11 +39,15 @@ function Events() {
   // Then reload events from the database
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.title && formObject.author) {
+    if (formObject.name && formObject.date && formObject.description) {
       API.saveEvent({
-        title: formObject.title,
-        author: formObject.author,
-        synopsis: formObject.synopsis
+        name: formObject.name,
+        date: formObject.date,
+        location: formObject.location,
+        link: formObject.link,
+        description: formObject.description,
+        // Needed or does mongo save it automatically for id?
+        eventId: formObject.eventId
       })
         .then(res => loadEvents())
         .catch(err => console.log(err));
