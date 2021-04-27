@@ -7,25 +7,25 @@ function NewsJumbo() {
   const newsApi = process.env.REACT_APP_NEWS_KEY;
   const [search, setSearch] = useState(""); //holds search term itself
   const [newsResults, setNewsResults] = useState([]); // Actual newsResults
-  // useEffect(() => {
-  //   // console.log(process.env.REACT_APP_News_Key)
-  //   fetch(
-  //     "https://api.bing.microsoft.com/v7.0/news/search?q=Georgia+Vote&count=4",
-  //     {
-  //       method: "GET",
-  //       headers: {
-  //         "Ocp-Apim-Subscription-Key": newsApi,
-  //       },
-  //     }
-  //   )
-  //     .then((response) => response.json())
-  //     .then((response) => {
-  //       // setSearch(response.value)
-  //       console.log(response.value[0]);
-  //       //name of news article, description, image and url link to article.
-  //       setNewsResults(response.value);
-  //     });
-  // }, []);
+  useEffect(() => {
+    // console.log(process.env.REACT_APP_News_Key)
+    fetch(
+      "https://api.bing.microsoft.com/v7.0/news/search?q=Georgia+Vote&count=4",
+      {
+        method: "GET",
+        headers: {
+          "Ocp-Apim-Subscription-Key": newsApi,
+        },
+      }
+    )
+      .then((response) => response.json())
+      .then((response) => {
+        // setSearch(response.value)
+        console.log(response.value[0]);
+        //name of news article, description, image and url link to article.
+        setNewsResults(response.value);
+      });
+  }, []);
 
   return (
     <section className="newsInclusive">
