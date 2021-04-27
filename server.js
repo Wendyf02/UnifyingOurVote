@@ -63,7 +63,7 @@ require('./routes/user.routes')(app);
 app.use("/api/events", require('./routes/api/events'))
 
 app.use(function(req, res) {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 // Start the API server
