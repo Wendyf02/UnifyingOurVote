@@ -7,7 +7,7 @@ import Signup from "./components/Signup/register.component";
 import Jumbotron from "./components/Jumbotron";
 import Home from "./components/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import EventFormPage from "./components/EventFormPage";
+import EventFormPage from "./pages/Events";
 import "./App.css";
 import ActualEvent from "./components/ActualEvent";
 
