@@ -1,6 +1,6 @@
 
 #hero {
-    height: 810px;
+    height: 750px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../../assets/images/home1rvsd.png");
@@ -8,26 +8,12 @@
     background-position: center;
 }
 
+
 .home2 {
     height: 500px;
     width:700px;
     margin-top: 140px;
-
 }
-
- @media only screen and (max-width: 680px) {
-      .home2 {
-          width:100%;
-      }
-      .about1 {
-          width: 100% !important;
-      }
-
-      .about2 {
-        width: 100% !important;
-      }
- }
-
 
 h1 {
     font-size: weight 50;
@@ -41,60 +27,24 @@ h2, h5{
 }
 
 
-
-
-
-
-
 h4, h3, h6 {
     color: rgb(237, 28, 36);
    
 }
 
 
-
-
 #aboutus {
-    margin-top: 100px;
-    margin-bottom: 50px;;
+    margin-top:100px;
+    margin-bottom: 15px;;
     
 }
 
-@media only screen and (max-width: 760px) {
-
-    #aboutus  {
-        font-size: 2.75rem !important;
-    }  
-}
-
-@media only screen and (max-width: 560px) {
-
-    #aboutus  {
-        font-size: 2.5rem !important;
-    }  
-}
-
-
- @media only screen and (max-width: 375px) {
-    #aboutus  {
-        font-size: 2rem !important;
-      }
-      
- }
-
-
- @media only screen and (max-width: 375px) {
-    #aboutus  {
-        font-size: 2.50rem !important;
-      }
-      
- }
 
 
 .about1 {
     height:500px;
     width:700px;
-    
+    margin-bottom: 20px;   
 }
 
 #about2 {
@@ -103,6 +53,10 @@ h4, h3, h6 {
     margin-top: 100px;
 }
 
+
+.aboutapp {
+    text-align:justify;
+}
 
 #quote1 {
  margin-top: 30px;
@@ -113,7 +67,6 @@ h4, h3, h6 {
 }
 
 
-
 hr {
     border-top:4px solid rgb(18, 30, 66)!important;
 }
@@ -121,7 +74,7 @@ hr {
 
 .login, .signup {
     background-color:solid white!important;
-    color: rgb(18, 30, 66);
+    color:  rgb(237, 28, 36);
     font-size: small;
     border-radius: 25px !important;
     border: 2px solid rgb(237, 28, 36) !important;
@@ -141,6 +94,30 @@ hr {
     
 }
 
+.lin1, .link2, .link3 {
+    background-color:solid white!important;
+    color: rgb(18, 30, 66);
+    font-size: small;
+    border-radius: 25px !important;
+    border: 2px solid rgb(237, 28, 36) !important;
+    width: 170px;
+    height: 40px;
+    /* float: right;  */
+    right: 0; 
+    margin-right: 45px;
+    margin-left: 45px;
+    margin: 10px;
+    
+  }
+
+.lin1, .link2, .link3 {
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(18, 30, 66);
+    transition: transform 150ms;
+    transform: scale(1.03);
+    
+}
+
+
 #unitevote {
         font-size:  45px;
         font-weight: bold;
@@ -157,18 +134,48 @@ hr {
     }
 }
 
+
 @media only screen and (max-width: 760px) {
 
     #unitevote {
         font-size: 2rem !important;
     }  
+
+    #aboutus  {
+        font-size: 2.75rem !important;
+    }  
+    .home2 {
+        height: 100%;
+      }
+
 }
+
+
+@media only screen and (max-width: 680px) {
+    .home2 {
+        width:100%;
+    }
+    .about1 {
+        width: 100% !important;
+    }
+
+    .about2 {
+      width: 100% !important;
+    }
+}
+
+
 
 @media only screen and (max-width: 560px) {
 
     #unitevote {
         font-size: 1.75rem !important;
     }  
+
+    #aboutus  {
+        font-size: 2.5rem !important;
+    }  
+
 }
 
 
@@ -176,5 +183,10 @@ hr {
       #unitevote {
         font-size: 1.75rem !important;
       }
-      
+
+      #aboutus  {
+        font-size: 2rem !important;
+      }
  }
+
+ 
