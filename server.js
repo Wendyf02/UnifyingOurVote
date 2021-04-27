@@ -1,5 +1,5 @@
 const express = require("express");
-var cors = require('cors');
+// var cors = require('cors');
 
 const mongoose = require("mongoose");
 const routes = require("./routes/auth.routes");
@@ -10,23 +10,23 @@ const db = require("./models/index");
 const PORT = process.env.PORT || 3001;
 
 
-var whitelist = ['http://localhost:3000', 'http://localhost:3001']
-var corsOptions = {
-  origin: function (origin, callback) {
-    console.log(origin)
-    if (whitelist.indexOf(origin) !== -1) {
-      console.log(origin);
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
+// var whitelist = ['http://localhost:3000', 'http://localhost:3001']
+// var corsOptions = {
+//   origin: function (origin, callback) {
+//     console.log(origin)
+//     if (whitelist.indexOf(origin) !== -1) {
+//       console.log(origin);
+//       callback(null, true)
+//     } else {
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   }
+// }
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
