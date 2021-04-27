@@ -42,7 +42,7 @@ function Events() {
   // When the form is submitted, use the API.saveEvent method to save the event data
   // Then reload events from the database
   function handleFormSubmit(event) {
-    console.log("");
+    console.log("here");
     event.preventDefault();
     if (formObject.name && formObject.date && formObject.description) {
       API.saveEvent({
@@ -137,7 +137,7 @@ function Events() {
                   ></textarea>
                 </div>
               </div>
-              <button className="Done" onClick={handleFormSubmit}>Done</button>
+              <button  disabled={!(formObject.name && formObject.date && formObject.description)} className="Done" onClick={handleFormSubmit}>Done</button>
             </div>
           {/* </div> */}
         </div>

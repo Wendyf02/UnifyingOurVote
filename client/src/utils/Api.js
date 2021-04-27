@@ -17,6 +17,6 @@ export default {
     //Saves an event to the database
     saveEvent: function(eventData) {
         console.log(eventData)
-        return axios.get("http://localhost:3001/api/events/idk");
+        return axios.post("/api/events" , eventData);
     }
 }
