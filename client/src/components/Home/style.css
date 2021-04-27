@@ -16,7 +16,7 @@
 }
 
 h1 {
-    font-size: weight 50;
+    font-size: 50px;
     font-size: 48px;
 	color: rgb(245, 243, 243);
 }
@@ -148,12 +148,14 @@ hr {
     .home2 {
         height: 100%;
       }
+
     .about1 {
         height: 100%; 
     }
     .about2 {
         height: 100%; 
     }
+
 }
 
 

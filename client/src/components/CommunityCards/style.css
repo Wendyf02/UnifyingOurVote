@@ -11,6 +11,6 @@
 .card-subtitle {
   text-align: center;
 }
-/* .buttonColumn {
-  text-align: center;
-} */
+.firstRow{
+  display: none;
+}
