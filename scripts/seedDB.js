@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const db = require("../models");
+require('dotenv').config()
 
 // This file empties the Events collection and inserts the events below
 

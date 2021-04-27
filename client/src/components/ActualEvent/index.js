@@ -56,26 +56,7 @@ function ActualEvent(props) {
           <br></br>
           <br></br>
           <p>
-            Sed id turpis vitae ipsum dignissim semper eu a eros. Nunc
-            condimentum aliquam nibh vitae venenatis. Praesent eu aliquet odio,
-            quis tristique ex. Nulla interdum malesuada neque id vehicula. Ut
-            lacinia nulla at magna placerat tristique. Phasellus sed porttitor
-            lectus. Duis sit amet purus in mi ornare efficitur nec in arcu.
-            Pellentesque mauris lectus, viverra id elementum id, sagittis a
-            arcu. Sed mollis nec diam tempus pulvinar. Integer consectetur sem
-            nisl, vitae molestie justo tincidunt non. Fusce eu lectus vel lacus
-            pellentesque ultrices. Sed molestie vehicula diam, et facilisis
-            neque cursus eget. Mauris nibh erat, porta sed gravida id,
-            sollicitudin in nunc. Quisque lectus mauris, efficitur nec hendrerit
-            id, convallis molestie enim. Phasellus eleifend neque nec placerat
-            cursus. Aliquam id maximus dui. Praesent at quam nunc. Nullam rutrum
-            nunc eros, feugiat cursus mi rutrum hendrerit. Aliquam sed congue
-            magna, sed iaculis sapien. Sed rutrum velit eget commodo dictum.
-            Curabitur aliquam dolor vel diam placerat, sit amet suscipit massa
-            rutrum. Cras nulla justo, euismod at egestas et, posuere a dolor. Ut
-            a quam erat. Praesent sed ipsum ac mauris bibendum fringilla. Proin
-            sodales turpis eu turpis pulvinar, et rutrum ipsum dignissim. Nulla
-            feugiat vel elit eget sodales. {event.description}
+            {event.description}
           </p>
         </div>
       </div>
