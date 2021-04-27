@@ -1,56 +1,70 @@
-body{
-    background-color: #121e42;
-    margin: 20px;
-  }
-  .eventContainer{
-    color: white;
-    height: 800px;
-    /* margin-top: 50px; */
-  }
-  .formContainer {
-    border-radius: 25px;
-    border: 2px solid #121e42;
-    margin-top: -80px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin: 0 auto;
-    width: 60%;
-    height: 650px;
-    background-color: #121e42;
-  }
-  .headerJumbo{
-    background: none;
-    color: white;
-    text-align: center;
-  }
-  .eventForm{
-    margin-left: 5%;
-    margin-right: 5%;
-    border-radius: 25px;
-    border: 2px solid #121e42;
-    background: white;
-    height: 350px;
-  }
-  .eventName, .eventLink, .eventDate, .eventLocation{
-    width: 180px;
-    margin-left: 10px;
-  }
-  .eventDescription{
-    /* width: 320px; */
-    margin: auto;
-  }
-  ::placeholder{
-    color: #ed1c24;
-  }
-  input{
-    border: 1px solid black;
-  }
-  textarea::placeholder{
-    color: #ed1c24;
-  }
-  .headerCreate{
-    font-weight: 500;
-  }
-  .rowTesting{
-    text-align: center;
-  }
+.formContainer {
+  border-radius: 25px;
+  border: 2px solid #121e42;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin: 0 auto;
+  width: 60%;
+  height: 700px;
+  background-color: #121e42;
+}
+#headerJumbo {
+  background: none;
+  color: white;
+  text-align: center;
+}
+#eventForm {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 25px !important;
+  border: 2px solid #121e42;
+  background: white !important;
+  height: 400px;
+  width: 90%;
+  color: black;
+}
+.eventName,
+.eventLink,
+.eventDate,
+.eventLocation {
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.eventDescription {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+::placeholder {
+  color: #ed1c24 !important;
+}
+input {
+  border: 4px solid black;
+}
+/* textarea::placeholder {
+  color: #ed1c24;
+} */
+.headerCreate {
+  font-weight: 500;
+  color: white;
+}
+.rowTesting {
+  text-align: center;
+}
+.Done {
+  background-color: #121e42;
+  color: white !important;
+  font-size: small;
+  border: 2px solid white;
+  width: 180px;
+  text-align: center;
+  height: 45px;
+  position:relative; 
+}
+.Done:hover{
+  box-shadow: 0 0.4rem 1.4rem 0 white;
+  transition: transform 150ms;
+  transform: scale(1.03);
+  border: 3px solid #ed1c24;
+}
