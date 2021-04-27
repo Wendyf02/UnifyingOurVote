@@ -7,10 +7,10 @@ const routes = require("./routes/auth.routes");
 const app = express();
 const db = require("./models/index");
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8000;
 
 
-var whitelist = ['http://localhost:3000']
+var whitelist = ['http://localhost:8000']
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
