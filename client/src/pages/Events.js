@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./EventFormPage/style.css";
 import EventNavbar from "../components/EventNavbar";
 
-function Events() {
+function Events(props) {
   // Setting our component's initial state
   const [events, setEvents] = useState([]);
   const [formObject, setFormObject] = useState({});
@@ -52,7 +52,7 @@ function Events() {
         link: formObject.link,
         description: formObject.description,
       })
-        .then((res) => console.log(res))
+        .then((res) => props.history.push(`/events/${res.data._id}`))
         .catch((err) => console.log(err));
     }
   }
