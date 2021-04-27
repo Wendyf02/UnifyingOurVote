@@ -10,9 +10,10 @@ const db = require("./models/index");
 const PORT = process.env.PORT || 3001;
 
 
-var whitelist = ['http://localhost:3000']
+var whitelist = ['http://localhost:3000', 'http://localhost:3001']
 var corsOptions = {
   origin: function (origin, callback) {
+    console.log(origin)
     if (whitelist.indexOf(origin) !== -1) {
       console.log(origin);
       callback(null, true)
@@ -31,8 +32,6 @@ app.use(cors(corsOptions));
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-
-
 
 // Add routes, both API and view
 routes(app);
@@ -58,6 +57,7 @@ function initial() {
 // routes
 require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
+app.use("/api/events", require('./routes/api/events'))
 
 // Start the API server
 app.listen(PORT, function() {
