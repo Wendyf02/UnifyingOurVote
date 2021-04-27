@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import API from "../../utils/API";
+import API from "../../utils/Api";
 // Maybe use below to link to previous page or other page within application.
 import { Link, useParams } from "react-router-dom";
 import "./style.css";
