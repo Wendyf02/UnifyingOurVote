@@ -62,7 +62,7 @@ require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
 app.use("/api/events", require('./routes/api/events'))
 
-router.use(function(req, res) {
+app.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
