@@ -2,7 +2,7 @@ const express = require("express");
 var cors = require('cors');
 
 const mongoose = require("mongoose");
-const routes = require("./routes/auth.routes");
+// const routes = require("./routes/auth.routes");
 
 const app = express();
 const db = require("./models/index");
@@ -10,22 +10,23 @@ const db = require("./models/index");
 const PORT = process.env.PORT || 3001;
 
 
-var whitelist = ['http://localhost:3000']
-var corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1) {
-      console.log(origin);
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
+// var whitelist = ['http://localhost:3000', 'http://localhost:3001']
+// var corsOptions = {
+//   origin: function (origin, callback) {
+//     console.log(origin)
+//     if (whitelist.indexOf(origin) !== -1) {
+//       console.log(origin);
+//       callback(null, true)
+//     } else {
+//       callback(new Error('Not allowed by CORS'))
+//     }
+//   }
+// }
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -35,7 +36,7 @@ if (process.env.NODE_ENV === "production") {
 
 
 // Add routes, both API and view
-routes(app);
+// routes(app);
 
 
 // Connect to the Mongo DB
@@ -56,8 +57,13 @@ function initial() {
 }
 
 // routes
-require('./routes/auth.routes')(app);
-require('./routes/user.routes')(app);
+// require('./routes/auth.routes')(app);
+// require('./routes/user.routes')(app);
+// app.use("/api/events", require('./routes/api/events'))
+
+app.get("/api/events/idk", function(req, res){
+  console.log('here')
+})
 
 // Start the API server
 app.listen(PORT, function() {

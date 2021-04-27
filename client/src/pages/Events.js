@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
-
+import "./EventFormPage/style.css";
 
 function Events() {
   // Setting our component's initial state
@@ -10,8 +10,10 @@ function Events() {
 
   // Load all events and store them with setEvents
   useEffect(() => {
-    loadEvents()
-  }, [])
+    // loadEvents()
+    console.log(formObject)
+    console.log(!(formObject.name && formObject.date && formObject.description))
+  }, [formObject])
 
   // Loads all events and sets them to events
   function loadEvents() {
@@ -32,12 +34,14 @@ function Events() {
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
     const { name, value } = event.target;
+    console.log(name, value)
     setFormObject({...formObject, [name]: value})
   };
 
   // When the form is submitted, use the API.saveEvent method to save the event data
   // Then reload events from the database
   function handleFormSubmit(event) {
+    console.log("")
     event.preventDefault();
     if (formObject.name && formObject.date && formObject.description) {
       API.saveEvent({
@@ -46,68 +50,66 @@ function Events() {
         location: formObject.location,
         link: formObject.link,
         description: formObject.description,
-        // Needed or does mongo save it automatically for id?
-        eventId: formObject.eventId
       })
-        .then(res => loadEvents())
+        .then(res => console.log(res))
         .catch(err => console.log(err));
     }
   };
 
     return (
-      <Container fluid>
-        <Row>
-          <Col size="md-6">
-            <Jumbotron>
-              <h1>List of Events</h1>
-            </Jumbotron>
-            <form>
-              <Input
-                onChange={handleInputChange}
-                name="title"
-                placeholder="Title (required)"
-              />
-              <Input
-                onChange={handleInputChange}
-                name="author"
-                placeholder="Author (required)"
-              />
-              <TextArea
-                onChange={handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
-              />
-              <FormBtn
-                disabled={!(formObject.author && formObject.title)}
-                onClick={handleFormSubmit}
-              >
-                Submit Event
-              </FormBtn>
-            </form>
-          </Col>
-          <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Events On My List</h1>
-            </Jumbotron>
-            {events.length ? (
-              <List>
-                {events.map(event => (
-                  <ListItem key={event._id}>
-                    <Link to={"/events/" + event._id}>
-                      <strong>
-                        {event.title} by {event.author}
-                      </strong>
-                    </Link>
-                    <DeleteBtn onClick={() => deleteEvent(event._id)} />
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </Col>
-        </Row>
-      </Container>
+      <section>
+  <div className="formContainer"> HERE
+    <div className="jumbotron jumbotron-fluid headerJumbo">
+      <div className="container">
+        <h1 className="display-4 headerCreate">
+          What event would you <br></br> like to create?
+        </h1>
+      </div>
+    </div>
+
+    <div className="jumbotron jumbotron-fluid eventForm"> 
+      <div className="container">
+        <div className="form-group">
+
+          <div className="row justify-content-center">
+            <div className="col-5">
+              <label>Event Name {events.name}</label>
+              <input name="name" type="name" className="form-control eventName" id="exampleFormControlInput1" placeholder="Required" onChange={handleInputChange}/>
+            </div>
+
+            <div className="col-5">
+              <label>Event Link {events.link}</label>
+              <input type="link" className="form-control eventLink" id="exampleFormControlInput1" placeholder="Optional" onChange={handleInputChange}/>
+            </div>
+          </div>
+
+          <br></br>
+        
+          <div className="row justify-content-center">
+              <div className="col-5">
+                <label>Event Date {events.date}</label>
+                <input name="date" type="date" className="form-control eventDate" id="exampleFormControlInput1" onChange={handleInputChange}/>
+              </div>
+
+              <div className="col-5">
+                <label>Event Location {events.location}</label>
+                <input type="location" className="form-control eventLink" id="exampleFormControlInput1" placeholder="Optional" onChange={handleInputChange}/>
+              </div>
+          </div>
+
+          <div className="row rowTesting">
+            <div className="col-10">
+              <br></br>
+              <label>Event Description {events.description}</label> 
+              <textarea name="description" className="form-control eventDescription" id="exampleFormControlTextarea1" placeholder="Required" rows="3" onChange={handleInputChange}></textarea> 
+            </div>
+          </div>
+          <button onClick={handleFormSubmit}>Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
     );
   }
 
