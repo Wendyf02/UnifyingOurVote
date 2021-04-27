@@ -56,6 +56,7 @@ h4, h3, h6 {
 
 .aboutapp {
     text-align:justify;
+    color: rgb(18, 30, 66);
 }
 
 #quote1 {
@@ -147,7 +148,12 @@ hr {
     .home2 {
         height: 100%;
       }
-
+    .about1 {
+        height: 100%; 
+    }
+    .about2 {
+        height: 100%; 
+    }
 }
 
 
@@ -163,7 +169,6 @@ hr {
       width: 100% !important;
     }
 }
-
 
 
 @media only screen and (max-width: 560px) {
