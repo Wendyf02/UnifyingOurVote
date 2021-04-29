@@ -1,9 +1,13 @@
 {
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3001/",
   "name": "project-3",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@tailwindcss/custom-forms": "^0.2.1",
     "@tailwindcss/postcss7-compat": "^2.1.0",
     "@testing-library/jest-dom": "^5.11.10",

@@ -1,0 +1,35 @@
+.backgroundNav2 {
+  background-color: #121e42;
+  border-bottom: 10px solid white;
+}
+.navbar-brand {
+  font-size: xx-large !important;
+  font-weight: 540;
+  text-decoration: none;
+  color: white;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.yourCommunity {
+  background-color: #121e42;
+  color: white !important;
+  font-size: small;
+  border: 2px solid white;
+  width: 180px;
+  text-align: center;
+  height: 45px;
+  float: right;
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+}
+.yourCommunity:hover {
+  box-shadow: 0 0.4rem 1.4rem 0 white;
+  transition: transform 150ms;
+  transform: scale(1.03);
+  border: 3px solid #ed1c24;
+}
+.backCommunity {
+  margin-top: 10px;
+}

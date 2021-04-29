@@ -98,6 +98,9 @@ const Register = (props) => {
 
           setMessage(resMessage);
           setSuccessful(false);
+          setTimeout(() => {
+            props.history.push('/YourCommunity')
+          },2000)
         }
       );
     }
