@@ -1,70 +1,51 @@
-# Getting Started with Create React App
 
-Read updated...
+  ## Description
+ The Purpose of our App is to get people in the Georgia Community, a   
+ place to gather, organize and educate with the mision of staying active    
+ in the fight of the current law passed by Geogia Legislative.      
+ This unlawful law is aimed to disenfranchise and make it harder    
+ for African American and minorities to vote.      
 
-## Available Scripts
+ As a community we must Unify and Unite to this unjust law.
 
-In the project directory, you can run:
+  ## Installation
+ To begin clone the UnifyingOurVote repo, run npm install.      
+ You may need to install other npm packages so please follow along with your terminal.     
 
-### `npm start`
+## Application Used    
+  Bootstrap 4   
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ Express 4.17.1   
+ bcryptjs 2.4.3   
+ jsonwebtoken 8.5.1   
+ mongoose 5.9.1   
+ MongoDB   
+ React 16   
+ eact-router-dom 5   
+ axios 0.19.2   
+ react-validation 3.0.7   
+ validator 12.2.   
+ Figma   
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ Microsoft Bing News   
+ 
+  ## Lincense
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-### `npm test`
+## Link to deployed application
+  Heroku Deploy link: https://polar-chamber-52452.herokuapp.com/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Link to repository    
+https://github.com/Samya129/UnifyingOurVote
 
-### `npm run build`
+## Contibutors   
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://github.com/Samya129/UnifyingOurVote
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+https://github.com/Wendyf02    
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://github.com/mrramontorres     
 
-### `npm run eject`
+https://github.com/VinceH28      
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![GitHub](asset/herokuapp3.png)
