@@ -48,4 +48,7 @@ https://github.com/mrramontorres
 
 https://github.com/VinceH28      
 
-![GitHub](asset/herokuapp3.png)
+![GitHub](client/src/assets/images/ourvote1.png)     
+![GitHub](client/src/assets/images/ourvote2.png)   
+![GitHub](client/src/assets/images/ourvote3.png)    
+![GitHub](client/src/assets/images/ourvote4.png)    
